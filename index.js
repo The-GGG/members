@@ -1,5 +1,5 @@
 const Azure = require('azure-storage');
-const Bluebird = require('bluebird');
+const Promise = require('bluebird');
 
 const MEMBERS_ENTITY = "members";
 const MEMBERS_PARTITION_KEY = "fb_scale_partition";
@@ -29,7 +29,7 @@ module.exports = class Members {
 
 // :'(  y msft? y? y so sux?
 const promisify = (obj) => {
-  return Bluebird.promisifyAll(obj, {
+  return Promise.promisifyAll(obj, {
     promisifier: (func) => function (...args) {
       return new Promise((resolve, reject) => {
         try {
