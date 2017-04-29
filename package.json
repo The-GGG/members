@@ -1,19 +1,23 @@
 {
-  "name": "data",
+  "name": "members",
   "version": "1.0.0",
-  "description": "data lib",
+  "description": "members lib",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/The-GGG/data.git"
+    "url": "git+https://github.com/The-GGG/members.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/The-GGG/data/issues"
+    "url": "https://github.com/The-GGG/members/issues"
   },
-  "homepage": "https://github.com/The-GGG/data#readme"
+  "homepage": "https://github.com/The-GGG/members#readme",
+  "dependencies": {
+    "azure-storage": "^2.1.0",
+    "bluebird": "^3.5.0"
+  }
 }
