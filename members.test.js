@@ -4,6 +4,9 @@ const CONNECTION_STRING = '';
 
 var members = new Members(CONNECTION_STRING);
 
-members
+test('get members', () => {
+  members
   .getMembers()
-  .then(members => console.log(members));
+  .then(members => {
+    expect(members).toBeTruthy()})
+});
