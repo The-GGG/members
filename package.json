@@ -18,6 +18,8 @@
   "homepage": "https://github.com/The-GGG/members#readme",
   "dependencies": {
     "azure-storage": "^2.1.0",
-    "bluebird": "^3.5.0"
+    "bluebird": "^3.5.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0"
   }
 }
