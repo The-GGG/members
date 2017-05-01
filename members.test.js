@@ -1,8 +1,6 @@
-const Members = require('./index').Members;
+const Members = require('./index');
 
-const CONNECTION_STRING = '';
-
-var members = new Members(CONNECTION_STRING);
+var members = new Members(process.env.MEMBERS_CONNECTION_STRING);
 
 test('get members', () => {
   members
